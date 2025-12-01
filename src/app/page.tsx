@@ -2,15 +2,15 @@
 
 import React, { useState, useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Menu, 
-  X, 
-  ArrowRight, 
-  TrendingDown, 
-  Zap, 
-  Globe, 
-  CheckCircle, 
-  BarChart3, 
+import {
+  Menu,
+  X,
+  ArrowRight,
+  TrendingDown,
+  Zap,
+  Globe,
+  CheckCircle,
+  BarChart3,
   Factory,
   Leaf,
   DollarSign,
@@ -24,7 +24,7 @@ import {
   CreditCard
 } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
-
+// comentario
 const NeoCycleLanding = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,9 +59,9 @@ const NeoCycleLanding = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                <a 
+                <a
                   key={item.href}
-                  href={item.href} 
+                  href={item.href}
                   className="text-gray-700 hover:text-green-600 transition-colors"
                 >
                   {item.text}
@@ -73,7 +73,7 @@ const NeoCycleLanding = () => {
             </nav>
 
             {/* Mobile menu button */}
-            <button 
+            <button
               className="md:hidden p-2"
               onClick={toggleMenu}
               aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
@@ -88,9 +88,9 @@ const NeoCycleLanding = () => {
             <div className="md:hidden py-4 border-t border-gray-100">
               <nav className="flex flex-col space-y-3">
                 {navigationItems.map((item) => (
-                  <a 
+                  <a
                     key={item.href}
-                    href={item.href} 
+                    href={item.href}
                     className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     {item.text}
@@ -109,7 +109,7 @@ const NeoCycleLanding = () => {
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -118,7 +118,7 @@ const NeoCycleLanding = () => {
                 Transforme sus <span className="text-green-600">Residuos Industriales</span> en Flujo de Caja y Energía
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                El sistema operativo de logística inversa para la agroindustria boliviana. 
+                El sistema operativo de logística inversa para la agroindustria boliviana.
                 Gestión de residuos, eficiencia energética y acceso a mercados internacionales.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -132,8 +132,8 @@ const NeoCycleLanding = () => {
                 </button>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -183,7 +183,7 @@ const NeoCycleLanding = () => {
       {/* El Problema */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -199,7 +199,7 @@ const NeoCycleLanding = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -218,7 +218,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -237,7 +237,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -262,7 +262,7 @@ const NeoCycleLanding = () => {
       {/* La Solución */}
       <section id="soluciones" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -278,7 +278,7 @@ const NeoCycleLanding = () => {
           </motion.div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -296,7 +296,7 @@ const NeoCycleLanding = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Gestión de Biomasa</h3>
                 <p className="text-gray-600 mb-6">
-                  Convertimos sus desechos orgánicos en ingresos conectándolo con compradores verificados. 
+                  Convertimos sus desechos orgánicos en ingresos conectándolo con compradores verificados.
                   Arbitraje de residuos con logística optimizada.
                 </p>
                 <ul className="space-y-3">
@@ -316,7 +316,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -334,7 +334,7 @@ const NeoCycleLanding = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Infraestructura Solar</h3>
                 <p className="text-gray-600 mb-6">
-                  Reduzca su factura eléctrica sin inversión inicial. Modelo PPA (Power Purchase Agreement) 
+                  Reduzca su factura eléctrica sin inversión inicial. Modelo PPA (Power Purchase Agreement)
                   con garantía de ahorro.
                 </p>
                 <ul className="space-y-3">
@@ -354,7 +354,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -372,7 +372,7 @@ const NeoCycleLanding = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Export & Liquidez</h3>
                 <p className="text-gray-600 mb-6">
-                  Pagos internacionales rápidos y certificaciones de trazabilidad para exportar a Europa 
+                  Pagos internacionales rápidos y certificaciones de trazabilidad para exportar a Europa
                   y mercados premium.
                 </p>
                 <ul className="space-y-3">
@@ -399,7 +399,7 @@ const NeoCycleLanding = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -413,7 +413,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -427,7 +427,7 @@ const NeoCycleLanding = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -447,7 +447,7 @@ const NeoCycleLanding = () => {
       {/* CTA Final */}
       <section id="contacto" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-4xl">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -458,7 +458,7 @@ const NeoCycleLanding = () => {
               ¿Listo para <span className="text-green-600">Optimizar</span> su Planta?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Deje de tirar dinero a la basura. Hable con un ingeniero de soluciones hoy y 
+              Deje de tirar dinero a la basura. Hable con un ingeniero de soluciones hoy y
               descubra el potencial oculto en su operación.
             </p>
           </motion.div>
@@ -477,7 +477,7 @@ const NeoCycleLanding = () => {
                 Sistema Operativo de Recursos para la agroindustria boliviana
               </p>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4">Soluciones</h4>
               <ul className="space-y-2 text-gray-400">
@@ -486,7 +486,7 @@ const NeoCycleLanding = () => {
                 <li><a href="#" className="hover:text-green-400 transition-colors">Exportación</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4">Empresa</h4>
               <ul className="space-y-2 text-gray-400">
@@ -495,7 +495,7 @@ const NeoCycleLanding = () => {
                 <li><a href="#" className="hover:text-green-400 transition-colors">Contacto</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-gray-400">
@@ -505,7 +505,7 @@ const NeoCycleLanding = () => {
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
             <p>&copy; 2025 NeoCycle. Todos los derechos reservados.</p>
           </div>
